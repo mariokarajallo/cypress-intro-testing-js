@@ -28,7 +28,7 @@ export default class UI {
     //quitar la alerta despues de 5 segundos
     setTimeout(() => {
       divMensaje.remove();
-    }, 50000);
+    }, 5000);
   }
 
   //hacemos destructuring desde el parametro del metodo, de esta manera accedemos de forma directa al arreglo de citas
