@@ -14,6 +14,9 @@ export default class UI {
       divMensaje.classList.add("alert-success");
     }
 
+    //asignar atributo cypress para implementar las buenas practicas en el test
+    divMensaje.dataset.cy = "titulo-alerta";
+
     //asignando el mensaje de error
     divMensaje.textContent = mensaje;
 
@@ -25,7 +28,7 @@ export default class UI {
     //quitar la alerta despues de 5 segundos
     setTimeout(() => {
       divMensaje.remove();
-    }, 5000);
+    }, 50000);
   }
 
   //hacemos destructuring desde el parametro del metodo, de esta manera accedemos de forma directa al arreglo de citas
