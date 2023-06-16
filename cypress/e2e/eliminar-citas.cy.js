@@ -33,6 +33,9 @@ describe("llenas el formulario para una nueva cita y elimina", () => {
 
     // seleccionar la alerta y verificar clase de alerta
     cy.get("[data-cy='titulo-alerta']").should("have.class", "alert-success");
+
+    //tomar una captura del test
+    cy.screenshot();
   });
 
   it("elimina una cita", () => {
